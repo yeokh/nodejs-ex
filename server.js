@@ -94,8 +94,8 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/log', function (req, res) {
   // generate log to stdout and stderr
-  console.log("MHA log message to stdout from NodeJS");
-  console.error("MHA log message to stderr from NodeJS");
+  console.log("REDHAT DEMO log message to stdout from NodeJS");
+  console.error("REDHAT DEMO log message to stderr from NodeJS");
   res.send("Logging");
 });
 
@@ -110,7 +110,7 @@ initDb(function(err){
 });
 
 app.listen(port, ip);
-console.log("MHA Demo with NodeJS");
+console.log("REDHAT Demo with NodeJS");
 console.log('Server running on http://%s:%s', ip, port);
 
 module.exports = app ;
