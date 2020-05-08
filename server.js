@@ -94,8 +94,9 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/log', function (req, res) {
   // generate log to stdout and stderr
-  console.log("MHA stdout message from NodeJS");
-  console.error("MHA stderr message from NodeJS");
+  console.log("MHA log message to stdout from NodeJS");
+  console.error("MHA log message to stderr from NodeJS");
+  res.send("Logging");
 });
 
 // error handling
