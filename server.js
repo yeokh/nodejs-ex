@@ -95,8 +95,8 @@ app.get('/pagecount', function (req, res) {
 app.get('/log', function (req, res) {
   // generate log to stdout and stderr
   console.log("REDHAT DEMO log message to standard output from NodeJS");
-  console.error("REDHAT DEMO message with standard keywords stdout or stderr from NodeJS");   
-  console.error("REDHAT DEMO log message to standard error from NodeJS");
+  console.error("REDHAT SGMHA DEMO message with standard keywords stdout or stderr from NodeJS");   
+  console.error("REDHAT SGMHA DEMO log message to standard error from NodeJS");
   res.send("Logging");
 });
 
