@@ -92,12 +92,13 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+// REDHAT DEMO to generate messager and error log to EFK
 app.get('/log', function (req, res) {
   // generate log to stdout and stderr
   console.log("REDHAT DEMO log message to standard output from NodeJS");
-  console.error("REDHAT DEMO message with standard keywords stdout or stderr from NodeJS");   
+  console.error("REDHAT DEMO message with standard keywords stdout or stderr from NodeJS - This will not appear");   
   console.error("REDHAT DEMO log message to standard error from NodeJS");
-  res.send("Logging");
+  res.send("Generate logging messages...");
 });
 
 // error handling
